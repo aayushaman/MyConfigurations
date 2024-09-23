@@ -5,7 +5,7 @@
 # ~/.config/starship.toml
 
 format = '''
-[┌─](bold green)[\[$username$hostname\]](bold green)[-](bold green)[\[$directory\]](bold green)
+[┌──](bold green)[\($username$hostname\)](bold green)[-](bold green)[\[$directory\]](bold green)
 [│](bold green)
 [└─\[\$\]](bold green) '''
 
