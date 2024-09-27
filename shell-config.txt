@@ -5,8 +5,7 @@
 # ~/.config/starship.toml
 
 format = '''
-[┌──](bold green)[\($username$hostname\)](bold green)[-](bold green)[\[$directory\]](bold green)
-[└─\[\$\]](bold green) '''
+[$username$hostname](white)[:](white)[$directory](white)[\$](white) '''
 
 # Wait 10 milliseconds for starship to check files under the current directory.
 scan_timeout = 10
@@ -26,8 +25,8 @@ mustard = '#af8700'
 
 
 [username]
-style_user = "green bold"
-style_root = "red bold"
+style_user = "white"
+style_root = "white bold"
 format = "[$user]($style)"
 disabled = false
 show_always = true
@@ -35,5 +34,5 @@ show_always = true
 # Configure hostname module
 [hostname]
 ssh_only = false
-format = "[@$hostname](bold green)"
+format = "[@$hostname](white)"
 disabled = false
